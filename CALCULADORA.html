@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+</head>
+
+<body>
+    <label>INGRESA EL PRIMER VALOR</label><br>
+    <br>
+    <input type="text" id="num1" placeholder="INGRESA EL PRIMER NUMERO"><br>
+    <br>
+    <label>INGRESA EL SEGUNDO VALOR</label><br>
+    <br>
+    <input type="text" id="num2" placeholder="INGRESA EL SEGUNDO NUMERO"><br>
+    <br>
+    <script>
+        function suma(){
+        var n1= parseInt(document.getElementById("num1").value);
+        var n2= parseInt(document.getElementById("num2").value);
+        var re;
+        re= n1+n2;
+        alert("EL RESULTADO DE LA SUMA ES: " + re);
+        }
+        function resta(){
+        var n1= document.getElementById("num1").value;
+        var n2= document.getElementById("num2").value;
+        var re;
+        re= n1-n2;
+        alert("EL RESULTADO DE LA SUMA ES: " + re);
+        }
+        function mult(){
+        var n1= document.getElementById("num1").value;
+        var n2= document.getElementById("num2").value;
+        var re;
+        re= n1*n2;
+        alert("EL RESULTADO DE LA SUMA ES: " + re);
+        }
+        function div(){
+        var n1= document.getElementById("num1").value;
+        var n2= document.getElementById("num2").value;
+        var re;
+        re= n1/n2;
+        alert("EL RESULTADO DE LA SUMA ES: " + re);
+        }
+        </script>
+    <button type="submit" id="1" onclick="suma()"><h4>SUMA</h4></button><br>
+    <br>
+    <button type="submit" id="2" onclick="resta()"><h4>RESTA</h4></button><br>
+    <br>
+    <button type="submit" id="3" onclick="mult()"><h4>MULTIPLICACION</h4></button><br>
+    <br>
+    <button type="submit" id="4" onclick="div()"><h4>DIVISION</h4></button><br>
+    
+    
+</body>
+</html>
